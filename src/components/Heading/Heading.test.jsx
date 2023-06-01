@@ -82,4 +82,9 @@ describe('<Heading />', () => {
 
     expect(h6.tagName.toLowerCase()).toBe('h6');
   });
+
+  it('should a match a snapshot', () => {
+    const { container } = renderTheme(<Heading>text</Heading>);
+    expect(container).toMatchSnapshot();
+  });
 });
