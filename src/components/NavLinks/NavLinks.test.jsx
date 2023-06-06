@@ -24,6 +24,6 @@ describe('<NavLinks>', () => {
 
   it('should match a snapshot', () => {
     const { container } = renderTheme(<NavLinks links={mock} />);
-    expect(container).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

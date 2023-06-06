@@ -29,18 +29,16 @@ describe('<TextComponent />', () => {
 
   it('should match a snapshot', () => {
     const { container } = renderTheme(<TextComponent>Children</TextComponent>);
-    expect(container).toMatchInlineSnapshot(`
+    expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         font-size: 2.4rem;
       }
 
-      <div>
-        <p
-          class="c0"
-        >
-          Children
-        </p>
-      </div>
+      <p
+        class="c0"
+      >
+        Children
+      </p>
     `);
   });
 });
