@@ -20,7 +20,7 @@ export const Container = styled.div`
 `;
 
 export const Container2 = styled(Container).attrs({ as: 'article' })`
-  background: blue
+  background: blue;
 `;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
