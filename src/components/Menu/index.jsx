@@ -18,7 +18,7 @@ export const Menu = ({ links = [], logoData }) => {
         aria-label="Open/Close menu"
       >
         {show ? (
-          <CloseIcon aria-aria-label="Close menu" />
+          <CloseIcon aria-label="Close menu" />
         ) : (
           <MenuIcon aria-label="Open menu" />
         )}
