@@ -64,7 +64,9 @@ describe('<Heading />', () => {
     renderTheme(<Heading>text</Heading>);
     const heading = screen.getByRole('heading', { name: 'text' });
 
-    expect(heading).toHaveStyleRule('font-size', theme.fonts.sizes.xlarge, { media: theme.media.lteMedium });
+    expect(heading).toHaveStyleRule('font-size', theme.fonts.sizes.xlarge, {
+      media: theme.media.lteMedium,
+    });
   });
 
   it('should render with uppercase letters', () => {
