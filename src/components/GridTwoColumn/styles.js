@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Title } from '../Heading/styles.js';
 export const Container = styled.div`
-  ${({ theme, background }) => css`
+  ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: ${theme.spacings.large};
@@ -18,7 +18,6 @@ export const Container = styled.div`
 
     ${Title} {
       margin-bottom: ${theme.spacings.xlarge};
-      color: ${background ? theme.colors.white : theme.colors.primaryColor};
     }
   `}
 `;
