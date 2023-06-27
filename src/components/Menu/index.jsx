@@ -14,7 +14,7 @@ export const Menu = ({ links = [], logoData }) => {
     <>
       <Styled.Button
         show={show}
-        onClick={() => setShow(!show)}
+        onClick={() => setShow(true)}
         aria-label="Open/Close menu"
       >
         {show ? (

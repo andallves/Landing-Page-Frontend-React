@@ -14,7 +14,6 @@ describe('<Menu>', () => {
     const { container } = renderTheme(
       <Menu links={linkMock} logoData={logoData} />,
     );
-
     expect(screen.getByRole('heading', { name: 'Logo' })).toBeInTheDocument();
     expect(
       screen.getByRole('navigation', { name: 'Main menu' }),
@@ -33,6 +32,7 @@ describe('<Menu>', () => {
     expect(button).toHaveStyleRule('display', 'flex', {
       media: theme.media.lteMedium,
     });
+
     expect(menuContainer).toHaveStyleRule('opacity', '0', {
       media: theme.media.lteMedium,
     });
@@ -44,7 +44,7 @@ describe('<Menu>', () => {
     });
     expect(screen.getByLabelText('Close menu')).toBeInTheDocument();
 
-    fireEvent.click(button);
+    fireEvent.click(menuContainer);
     expect(menuContainer).toHaveStyleRule('opacity', '0', {
       media: theme.media.lteMedium,
     });
