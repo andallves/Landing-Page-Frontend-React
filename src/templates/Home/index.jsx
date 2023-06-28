@@ -1,9 +1,13 @@
 import { Base } from '../Base';
-import { mockBase } from '../Base/stories';
-// import * as Styled from './styles';
+import { mockBase } from '../Base/mock';
+import * as Styled from './styles';
 
 function Home() {
-  return <Base {...mockBase} />;
+  return (
+    <Styled.Wrapper>
+      <Base {...mockBase} />;
+    </Styled.Wrapper>
+  );
 }
 
 export default Home;

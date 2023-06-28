@@ -18,10 +18,8 @@ exports[`<Menu> should not render links 1`] = `
   z-index: 5;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   border-bottom: #DDDDDD;
   background: #FFFFFF;
   -webkit-transition: all 300ms ease-in-out;
@@ -102,7 +100,7 @@ exports[`<Menu> should not render links 1`] = `
   overflow: hidden;
 }
 
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c2 {
     height: 100vh;
     visibility: hidden;
@@ -134,15 +132,15 @@ exports[`<Menu> should not render links 1`] = `
   }
 }
 
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c5 {
     display: block;
     text-align: center;
-    padding: 4.8rem;
+    padding: 4.8rem 0;
   }
 }
 
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -159,7 +157,7 @@ exports[`<Menu> should not render links 1`] = `
   }
 }
 
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c9 {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
@@ -236,10 +234,8 @@ exports[`<Menu> should render Logo and Main Menu Nav 1`] = `
   z-index: 5;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   border-bottom: #DDDDDD;
   background: #FFFFFF;
   -webkit-transition: all 300ms ease-in-out;
@@ -347,7 +343,7 @@ exports[`<Menu> should render Logo and Main Menu Nav 1`] = `
   overflow: hidden;
 }
 
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c2 {
     height: 100vh;
     visibility: hidden;
@@ -379,15 +375,15 @@ exports[`<Menu> should render Logo and Main Menu Nav 1`] = `
   }
 }
 
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c5 {
     display: block;
     text-align: center;
-    padding: 4.8rem;
+    padding: 4.8rem 0;
   }
 }
 
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -404,7 +400,7 @@ exports[`<Menu> should render Logo and Main Menu Nav 1`] = `
   }
 }
 
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c9 {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
