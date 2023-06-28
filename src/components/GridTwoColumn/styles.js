@@ -6,11 +6,6 @@ export const Container = styled.div`
     grid-template-columns: 1fr 2fr;
     gap: ${theme.spacings.large};
 
-    @media ${theme.media.lteSmall} {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-
     @media ${theme.media.lteMedium} {
       grid-template-columns: 1fr;
       text-align: center;
@@ -24,10 +19,6 @@ export const Container = styled.div`
 
 export const TextContainer = styled.div`
   ${({ theme }) => css`
-  @media ${theme.media.lteSmall} {
-      margin-bottom: ${theme.spacings.large};
-    }
-
     @media ${theme.media.lteMedium} {
       margin-bottom: ${theme.spacings.large};
     }
@@ -35,7 +26,6 @@ export const TextContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-
 `;
 
 export const Image = styled.img`
