@@ -38,7 +38,7 @@ exports[`<NavLinks> should match a snapshot 1`] = `
   width: 50%;
 }
 
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c0 {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;

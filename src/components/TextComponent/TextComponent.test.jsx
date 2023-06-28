@@ -20,41 +20,11 @@ describe('<TextComponent />', () => {
     });
   });
 
-  it('should render correct font-size when using tablet', () => {
-    renderTheme(<TextComponent>Children</TextComponent>);
-    const paragraph = screen.getByText('Children');
-
-    expect(paragraph).toHaveStyleRule('font-size', theme.fonts.sizes.small, {
-      media: theme.media.lteMedium,
-    });
-  });
-
-  it('should render correct font-size when using mobile', () => {
-    renderTheme(<TextComponent>Children</TextComponent>);
-    const paragraph = screen.getByText('Children');
-
-    expect(paragraph).toHaveStyleRule('font-size', theme.fonts.sizes.xsmall, {
-      media: theme.media.lteSmall,
-    });
-  });
-
   it('should match a snapshot', () => {
     const { container } = renderTheme(<TextComponent>Children</TextComponent>);
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         font-size: 2.4rem;
-      }
-
-      @media (max-width:407px) {
-        .c0 {
-          font-size: .8rem;
-        }
-      }
-
-      @media (min-width:408px) and (max-width:768px) {
-        .c0 {
-          font-size: 1.6rem;
-        }
       }
 
       <div

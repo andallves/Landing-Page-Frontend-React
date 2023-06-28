@@ -57,25 +57,7 @@ exports[`<GridImage> should render with background 1`] = `
   text-transform: uppercase;
 }
 
-@media (max-width:407px) {
-  .c5 {
-    font-size: .8rem;
-  }
-}
-
-@media (min-width:408px) and (max-width:768px) {
-  .c5 {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width:407px) {
-  .c3 {
-    font-size: 3.2rem;
-  }
-}
-
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c3 {
     font-size: 4.0rem;
   }
@@ -222,25 +204,7 @@ exports[`<GridImage> should render without backgroud 1`] = `
   text-transform: uppercase;
 }
 
-@media (max-width:407px) {
-  .c5 {
-    font-size: .8rem;
-  }
-}
-
-@media (min-width:408px) and (max-width:768px) {
-  .c5 {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width:407px) {
-  .c3 {
-    font-size: 3.2rem;
-  }
-}
-
-@media (min-width:408px) and (max-width:768px) {
+@media (max-width:768px) {
   .c3 {
     font-size: 4.0rem;
   }
