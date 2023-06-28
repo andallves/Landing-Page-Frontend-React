@@ -2,10 +2,10 @@ import styled, { css } from 'styled-components';
 import { Container as SectionContainer } from '../SectionContainer/styles';
 import { Title as Heading } from '../Heading/styles';
 
-const showMenu = (theme) => css`
+const showMenu = () => css`
   visibility: visible;
   opacity: 1;
-  color: ${theme.colors.white};
+
 `;
 
 export const Container = styled.div`
@@ -14,10 +14,8 @@ export const Container = styled.div`
     z-index: 5;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     border-bottom: ${theme.colors.mediumGray};
     background: ${theme.colors.white};
     transition: all 300ms ease-in-out;
@@ -36,7 +34,7 @@ export const Container = styled.div`
       height: 100vh;
       visibility: hidden;
       opacity: 0;
-      ${show && showMenu(theme)}
+      ${show && showMenu()}
 
       > ${SectionContainer} {
         display: grid;
@@ -52,7 +50,6 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
       }
-
     }
   `}
 `;
@@ -66,7 +63,7 @@ export const MenuContainer = styled.div`
     @media ${theme.media.lteMedium} {
       display: block;
       text-align: center;
-      padding: ${theme.spacings.xxlarge};
+      padding: ${theme.spacings.xxlarge} 0;
     }
   `}
 `;
