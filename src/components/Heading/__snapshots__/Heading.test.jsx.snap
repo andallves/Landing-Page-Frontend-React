@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`<Heading /> should a match a snapshot 1`] = `
+exports[`<Heading /> > should a match a snapshot 1`] = `
 .c0 {
   color: #0A1128;
   font-size: 6.4rem;

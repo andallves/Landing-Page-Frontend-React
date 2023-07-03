@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Title } from '../Heading/styles.js';
+
 export const Container = styled.div`
   ${({ theme }) => css`
     display: grid;
@@ -29,4 +30,5 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
+  width: 100%;
 `;
