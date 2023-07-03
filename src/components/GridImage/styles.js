@@ -14,6 +14,8 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: ${theme.spacings.large};
+    overflow: hidden;
+    max-width: 120rem;
 
     @media ${theme.media.lteMedium} {
       grid-template-columns: 1fr;
@@ -24,6 +26,7 @@ export const Grid = styled.div`
 export const GridElement = styled.div`
   ${() => css`
     overflow: hidden;
+    display: flex;
   `}
 `;
 
