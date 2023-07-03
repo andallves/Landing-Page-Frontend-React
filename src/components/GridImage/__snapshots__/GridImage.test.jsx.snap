@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`<GridImage> should render with background 1`] = `
+exports[`<GridImage> > should render with background 1`] = `
 .c5 {
   font-size: 2.4rem;
 }
@@ -147,7 +147,7 @@ exports[`<GridImage> should render with background 1`] = `
 </div>
 `;
 
-exports[`<GridImage> should render without backgroud 1`] = `
+exports[`<GridImage> > should render without backgroud 1`] = `
 .c5 {
   font-size: 2.4rem;
 }
